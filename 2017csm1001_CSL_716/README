@@ -1,0 +1,41 @@
+
+##################################################################################################
+
+Dependency:
+	python 3.5
+	tensorflow 1.4.1 
+	opencv2 3.3.1
+	sklearn	
+	tflearn
+	codecs
+	pickle
+	matplotlib
+	matlab R2017a
+
+##################################################################################################
+
+Dataset:
+	follow following url and click on "Dataset images"
+	http://www.robots.ox.ac.uk/~vgg/data/flowers/17/
+
+	After dataset downloaded, copy folder 7 and 16  and folder 5 and 15 to 2flowers folder, since i have annotation information of only first two classes, and last two classes most similar to given two classes, whose boundary annotation will be predicted.
+
+	#image per class from unlabel class can be tune by changing threshold value from file "py_mat.py" at line no 30 and 42.   
+    
+
+To run code follow below steps:
+	
+	1) create a interface with matlab in python as (tricky one)
+
+	cd $MATLAB_HOME_DIR/extern/engines/python
+	python setup.py install
+
+	make
+
+	
+	program codes output will show on console, after few minutes, model training will start 	and output may reflected accordingly.	
+	
+###############################################################################################	
+
+	
+	
